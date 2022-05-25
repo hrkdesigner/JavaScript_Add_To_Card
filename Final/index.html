@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js_file.js" defer></script>
+    <script src="event.js" defer></script>
+    <title>Pasty Shop || Online Shop</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="">
+        <p class="welcome">Online Pasrty Shop Store</p>
+        <img src="images/chef.png" alt="">
+    </header>
+    <main>
+        <div id="notification">Your information added to cart</div>
+        <section class="contact">
+            <form name="pastry">
+                <h2>ORDER</h2>
+                <div>
+                    <label for="name">Your Full Name</label>
+                    <input id="name" type="text" name="fullname" autocomplete="off">
+                </div>
+                <div>
+                    <label for="child">What is Your Lucky Number?</label>
+                    <input id="child" type="number" name="lucky_number">
+                </div>
+                <div>
+                    <label for="birthday">Put Your Date of Birth to Get Discount:</label>
+                    <input id="birthday" type="date" name="birthday">
+                </div>
+                <div class="selection">
+                    <div>
+                        <label for="vip">VIP Customer:</label>
+                        <input id="vip" type="checkbox" name="vip" class="one">
+                    </div>
+                    <div id="order_selection">
+                        <p>Your order will be:</p>
+                        <div>
+                            <input type="radio" id="takeout" name="order" value="Takeout">
+                            <label for="takeout">Take out</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="store" name="order" value="Store">
+                            <label for="store">In store</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="store">How Do You Rate Our Store?</label><br>
+                    <input id="rate" type="text" name="product" list="productName" autocomplete="off"
+                        placeholder="Doubble Click to See the List" />
+                    <datalist id="productName">
+                        <option value="Awesome">Awesome</option>
+                        <option value="Awesome">Awful</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label>Your Total Price</label><br>
+                    <input id="sum" type="text" name="total" value="" readonly>
+                </div><br><br>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+            <img src="images/2.png" alt="" class="background">
+        </section>
+        <section class="gallery">
+            <h2>OUR SHOP</h2>
+            <ul id="option">
+
+            </ul>
+        </section>
+        <section class="list">
+            <div class="order_summary">
+                <img src="images/44.jpg" alt="">
+                <h2>Order Summary</h2>
+            </div>
+            <div>
+                <div id="user_info">
+
+                </div>
+                <ul id="result">
+                    <li>
+                        <img src="" alt="">
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <span></span>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
